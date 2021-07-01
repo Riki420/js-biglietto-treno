@@ -9,13 +9,15 @@
 
 var kmUser =  prompt('Quanti KM vorresti percorrere?');
 var ageUser = prompt('Inserisci la tua età');
-var kmPrice = '0.21'
+var kmPrice = '0.21';
 
 console.log(kmUser);
 console.log(ageUser);
 
-console.log(kmUser * kmPrice);
-
 if(ageUser < 18){
-    
+    console.log(kmUser * kmPrice / 100 * 20)
+} else if (ageUser > 65){
+    console.log(kmUser * kmPrice / 100 * 40)
+} else{
+    console.log(kmUser * kmPrice)
 }
